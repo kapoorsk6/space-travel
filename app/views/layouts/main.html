@@ -4,3 +4,57 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
 #}
 
 {% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
+
+
+{% block header %}
+<header class="govuk-header" data-module="govuk-header">
+    <div class="govuk-header__container govuk-width-container">
+        <div class="govuk-header__logo" bis_skin_checked="1">
+            <a href="/" class="govuk-header__link govuk-header__link--homepage">
+                ST Logo
+            </a>
+        </div>
+
+        <div class="govuk-header__content">
+            <a href="#" class="govuk-header__link govuk-header__service-name">
+                {{ serviceName }}
+            </a>
+        </div>
+    </div>
+</header>
+{% endblock %}
+
+{% block footer %}
+<footer class="govuk-footer">
+    <div class="govuk-width-container" bis_skin_checked="1">
+        <div class="govuk-footer__meta" bis_skin_checked="1">
+            <div class="govuk-footer__meta-item govuk-footer__meta-item--grow" bis_skin_checked="1">
+                <h2 class="govuk-visually-hidden">Footer links</h2>
+                <ul class="govuk-footer__inline-list">
+                    <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Lorem ipsum
+                        </a>
+                    </li>
+
+                    <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Lorem ipsum
+                        </a>
+                    </li>
+                </ul>
+                  
+                <span class="govuk-footer__licence-description">
+                    Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups
+                </span>
+            </div>
+            <div class="govuk-footer__meta-item" bis_skin_checked="1">
+                <a class="govuk-footer__link govuk-footer__copyright-logo space-travel__copyright-logo"
+                    href="/">
+                    © Space Travel
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}
